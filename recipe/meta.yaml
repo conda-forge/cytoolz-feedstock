@@ -7,7 +7,7 @@ package:
 source:
   fn: cytoolz-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
-  md5: df6c1b6f9d4133732065f450dd670e2a
+  sha256: d138a2a5f26646c0d979b157876d51dff1b772fd53a18d70e4ada6917e20ffbb
 
 build:
   number: 0
