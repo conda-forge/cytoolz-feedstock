@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: cytoolz
@@ -7,7 +7,7 @@ package:
 source:
   fn: cytoolz-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
-  md5: 432f0a17e04223942ebb5312d8f895ad
+  md5: df6c1b6f9d4133732065f450dd670e2a
 
 build:
   number: 0
