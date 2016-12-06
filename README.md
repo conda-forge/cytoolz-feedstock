@@ -11,6 +11,18 @@ Summary: Cython implementation of Toolz. High performance functional utilities.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cytoolz-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cytoolz-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/cytoolz-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cytoolz-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cytoolz-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cytoolz-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cytoolz/badges/version.svg)](https://anaconda.org/conda-forge/cytoolz)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cytoolz/badges/downloads.svg)](https://anaconda.org/conda-forge/cytoolz)
+
 Installing cytoolz
 ==================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `cytoolz` available on your platfo
 ```
 conda search cytoolz --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cytoolz-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cytoolz-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/cytoolz-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cytoolz-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cytoolz-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cytoolz-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cytoolz/badges/version.svg)](https://anaconda.org/conda-forge/cytoolz)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cytoolz/badges/downloads.svg)](https://anaconda.org/conda-forge/cytoolz)
 
 
 Updating cytoolz-feedstock

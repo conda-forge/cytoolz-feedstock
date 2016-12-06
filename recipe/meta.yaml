@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: cytoolz
@@ -7,7 +7,7 @@ package:
 source:
   fn: cytoolz-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
-  md5: 432f0a17e04223942ebb5312d8f895ad
+  sha256: d138a2a5f26646c0d979b157876d51dff1b772fd53a18d70e4ada6917e20ffbb
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
 test:
   requires:
     - nose
+    - toolz 0.8.1
   imports:
     - cytoolz
     - cytoolz.curried
