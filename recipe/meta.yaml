@@ -8,13 +8,6 @@ source:
   fn: cytoolz-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
   sha256: 84cc06fa40aa310f2df79dd440fc5f84c3e20f01f9f7783fc9c38d0a11ba00e5
-  patches:
-    ########################################################
-    # Remove problematic Cython doctests.                  #
-    #                                                      #
-    # xref: https://github.com/pytoolz/cytoolz/issues/116  #
-    ########################################################
-    - Drop-test_curried_doctests.patch
 
 build:
   number: 0
