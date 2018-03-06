@@ -24,7 +24,6 @@ requirements:
   build:
     - python
     - setuptools
-    - toolz >=0.8.0
   run:
     - python
     - toolz >=0.8.0
