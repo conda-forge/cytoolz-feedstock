@@ -14,14 +14,16 @@ Summary: Cython implementation of Toolz. High performance functional utilities.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cytoolz-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cytoolz-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/cytoolz-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cytoolz-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cytoolz-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cytoolz-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cytoolz-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cytoolz-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/cytoolz-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cytoolz-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cytoolz-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cytoolz-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cytoolz/badges/version.svg)](https://anaconda.org/conda-forge/cytoolz)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cytoolz/badges/downloads.svg)](https://anaconda.org/conda-forge/cytoolz)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cytoolz-green.svg)](https://anaconda.org/conda-forge/cytoolz) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cytoolz.svg)](https://anaconda.org/conda-forge/cytoolz) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cytoolz.svg)](https://anaconda.org/conda-forge/cytoolz) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cytoolz.svg)](https://anaconda.org/conda-forge/cytoolz) |
 
 Installing cytoolz
 ==================
