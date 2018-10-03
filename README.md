@@ -3,12 +3,15 @@ About cytoolz
 
 Home: https://github.com/pytoolz/cytoolz
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Cython implementation of Toolz. High performance functional utilities.
+Summary: Cython implementation of Toolz. High performance functional utilities
 
+CyToolz is the Cython implementation of the toolz package, which provides
+high performance utility functions for iterables, functions, and
+dictionaries.
 
 
 Current build status
