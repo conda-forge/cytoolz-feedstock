@@ -7,8 +7,6 @@ package:
 source:
   url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
   sha256: ed9f6a07c2bac70d6c597df360d0666d11d2adc90141d54c5c2db08b380a4fac
-  patches:
-    - 0001-Just-released-0.9.0.-Bump-to-next-dev-version-0.9.1d-Py37-compat.patch
 
 build:
   number: 0
