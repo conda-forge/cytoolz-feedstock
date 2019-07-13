@@ -21,12 +21,12 @@ requirements:
     - pip
   run:
     - python
-    - toolz >=0.8.0
+    - toolz >=0.10.0
 
 test:
   requires:
     - nose
-    - toolz 0.8.2
+    - toolz 0.10.0
   imports:
     - cytoolz
     - cytoolz.curried
