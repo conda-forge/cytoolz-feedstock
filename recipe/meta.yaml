@@ -9,7 +9,7 @@ source:
   sha256: 82f5bba81d73a5a6b06f2a3553ff9003d865952fcb32e1df192378dd944d8a5c
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython"
 
 requirements:
