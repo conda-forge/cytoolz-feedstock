@@ -39,7 +39,7 @@ test:
     - cytoolz
     - cytoolz.curried
   commands:
-    - nosetests --with-doctest cytoolz
+    - nosetests -v --with-doctest cytoolz
 
 about:
   home: https://github.com/pytoolz/cytoolz
