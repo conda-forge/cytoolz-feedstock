@@ -8,10 +8,13 @@ source:
   url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
   sha256: c64f3590c3eb40e1548f0d3c6b2ccde70493d0b8dc6cc7f9f3fec0bb3dcd4222
   patches:
+    # https://github.com/pytoolz/cytoolz/pull/149
     - 149-uninitialized_tuple.patch
+    # https://github.com/pytoolz/cytoolz/pull/150
+    - 150-bug_fix_patch_149.diff
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython
 
 requirements:
@@ -36,7 +39,7 @@ test:
     - cytoolz
     - cytoolz.curried
   commands:
-    - nosetests --with-doctest cytoolz
+    - nosetests -v --with-doctest cytoolz
 
 about:
   home: https://github.com/pytoolz/cytoolz
