@@ -14,7 +14,7 @@ source:
     - 150-bug_fix_patch_149.diff
 
 build:
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython
 
 requirements:
