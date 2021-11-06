@@ -11,7 +11,7 @@ source:
   sha256: ea23663153806edddce7e4153d1d407d62357c05120a4e8485bddf1bd5ab22b4
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython
 
 requirements:
