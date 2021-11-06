@@ -1,20 +1,17 @@
-{% set version = "0.11.0" %}
+{% set name = "cytoolz" %}
+{% set version = "0.11.2" %}
+
 
 package:
-  name: cytoolz
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
-  sha256: c64f3590c3eb40e1548f0d3c6b2ccde70493d0b8dc6cc7f9f3fec0bb3dcd4222
-  patches:
-    # https://github.com/pytoolz/cytoolz/pull/149
-    - 149-uninitialized_tuple.patch
-    # https://github.com/pytoolz/cytoolz/pull/150
-    - 150-bug_fix_patch_149.diff
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cytoolz-{{ version }}.tar.gz
+  sha256: ea23663153806edddce7e4153d1d407d62357c05120a4e8485bddf1bd5ab22b4
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython
 
 requirements:
@@ -24,22 +21,24 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - python
     - cython
     - pip
+    - python
   run:
     - python
     - toolz >=0.10.0
 
 test:
-  requires:
-    - nose
-    - toolz 0.10.0
   imports:
     - cytoolz
     - cytoolz.curried
   commands:
-    - nosetests -v --with-doctest cytoolz
+    - pip check
+    - pytest -v --doctest-modules --pyargs cytoolz
+  requires:
+    - pip
+    - pytest
+    - toolz {{ version }}
 
 about:
   home: https://github.com/pytoolz/cytoolz
