@@ -34,7 +34,7 @@ test:
     - cytoolz.curried
   commands:
     - pip check
-    - pytest -v --doctest-modules cytoolz
+    - pytest -v --doctest-modules --pyargs cytoolz
   requires:
     - pip
     - pytest
