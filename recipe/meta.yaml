@@ -37,7 +37,7 @@ test:
     - pytest -v --doctest-modules cytoolz
   requires:
     - pip
-    - pyteset
+    - pytest
     - toolz 0.11.2
 
 about:
