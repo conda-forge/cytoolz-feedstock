@@ -7,11 +7,6 @@ package:
 source:
   url: https://pypi.io/packages/source/c/cytoolz/cytoolz-{{ version }}.tar.gz
   sha256: ea23663153806edddce7e4153d1d407d62357c05120a4e8485bddf1bd5ab22b4
-  patches:
-    # https://github.com/pytoolz/cytoolz/pull/149
-    - 149-uninitialized_tuple.patch
-    # https://github.com/pytoolz/cytoolz/pull/150
-    - 150-bug_fix_patch_149.diff
 
 build:
   number: 0
