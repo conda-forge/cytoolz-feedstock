@@ -39,7 +39,7 @@ test:
   requires:
     - pip
     - pytest
-    - toolz
+    - toolz ={{ ".".join(version|split(".")[:2]) }}
     # - toolz {{ version }}  # Try to keep in sync
 
 about:
