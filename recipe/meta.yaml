@@ -1,5 +1,5 @@
 {% set name = "cytoolz" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.2" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cytoolz-{{ version }}.tar.gz
-  sha256: c105b05f85e03fbcd60244375968e62e44fe798c15a3531c922d531018d22412
+  sha256: 31d4b0455d72d914645f803d917daf4f314d115c70de0578d3820deb8b101f66
 
 build:
-  skip: True        # [python_impl == 'pypy']
-  number: 1
+  skip: true  # [python_impl == 'pypy']
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython
 
 requirements:
