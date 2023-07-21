@@ -39,7 +39,8 @@ test:
   requires:
     - pip
     - pytest
-    - toolz {{ version }}
+    - toolz
+    # - toolz {{ version }}  # Try to keep in sync
 
 about:
   home: https://github.com/pytoolz/cytoolz
