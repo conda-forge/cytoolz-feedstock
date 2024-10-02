@@ -56,6 +56,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jrbourbeau
     - eriknw
     - mrocklin
     - jcrist
