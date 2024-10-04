@@ -333,6 +333,7 @@ Feedstock Maintainers
 =====================
 
 * [@eriknw](https://github.com/eriknw/)
+* [@hendrikmakait](https://github.com/hendrikmakait/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jcrist](https://github.com/jcrist/)
 * [@jrbourbeau](https://github.com/jrbourbeau/)
