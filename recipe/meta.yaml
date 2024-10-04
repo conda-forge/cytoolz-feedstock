@@ -1,5 +1,5 @@
 {% set name = "cytoolz" %}
-{% set version = "0.12.3" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cytoolz-{{ version }}.tar.gz
-  sha256: 4503dc59f4ced53a54643272c61dc305d1dbbfbd7d6bdf296948de9f34c3a282
+  sha256: eb453b30182152f9917a5189b7d99046b6ce90cdf8aeb0feff4b2683e600defd
 
 build:
   skip: true  # [python_impl == 'pypy']
