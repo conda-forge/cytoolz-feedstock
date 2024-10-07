@@ -11,8 +11,7 @@ source:
   sha256: eb453b30182152f9917a5189b7d99046b6ce90cdf8aeb0feff4b2683e600defd
 
 build:
-  skip: true  # [python_impl == 'pypy']
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython
 
 requirements:
@@ -25,6 +24,7 @@ requirements:
   host:
     - cython
     - pip
+    - setuptools
     - python
   run:
     - python
