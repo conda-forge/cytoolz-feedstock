@@ -38,7 +38,7 @@ test:
   commands:
     - pip check
     - pytest -v --doctest-modules --pyargs cytoolz
-    - 'python -c "import toolz; assert cytoolz.__version__ != ''0.0.0''"'
+    - 'python -c "import cytoolz; assert cytoolz.__version__ != ''0.0.0''"'
   requires:
     - pip
     - pytest
