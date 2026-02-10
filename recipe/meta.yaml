@@ -12,7 +12,7 @@ source:
 
 build:
   number: 2
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --global-option=--with-cython
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv --config-settings="--build-option=--with-cython"
 
 requirements:
   build:
