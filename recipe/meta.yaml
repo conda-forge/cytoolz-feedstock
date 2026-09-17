@@ -37,7 +37,11 @@ test:
     - cytoolz.curried
   commands:
     - pip check
-    - pytest -v --doctest-modules --pyargs cytoolz
+    - pytest -v --doctest-modules --pyargs cytoolz  # [py<315]
+    # cytoolz reads its signature table from toolz, which has no entry for the
+    # frozendict builtin added in 3.15. Fixed in toolz master (pytoolz/toolz#624);
+    # drop the deselect once toolz >1.1.0 is available.
+    - pytest -v --doctest-modules --pyargs cytoolz -k "not test_introspect_builtin_modules"  # [py>=315]
     - 'python -c "import cytoolz; assert cytoolz.__version__ != ''0.0.0''"'
   requires:
     - pip
