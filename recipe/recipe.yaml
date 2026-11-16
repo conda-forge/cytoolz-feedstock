@@ -16,7 +16,7 @@ source:
   sha256: fdd8ded8a93e1be009577fccddaacf78aa21cbe7dc6ec53c229def0198a1ffa5
 
 build:
-  number: 0
+  number: 1
   # setup.py cythonizes all *.pyx files and errors if Cython is missing
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
